@@ -12,8 +12,7 @@ import com.mytest.materialdesignwidgetsample.fragment.PageFragment;
  */
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-    public final int COUNT = 5;
-    private String[] titles = new String[]{"Tab1", "Tab2", "Tab3", "Tab4", "Tab5"};
+    private String[] titles = new String[]{"Tab1", "Tab2", "Tab3", "Tab4", "Tab5","Tab1", "Tab2", "Tab3", "Tab4", "Tab5"};
     private Context context;
 
     public MyFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -28,7 +27,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return COUNT;
+        return titles.length;
     }
 
     @Override

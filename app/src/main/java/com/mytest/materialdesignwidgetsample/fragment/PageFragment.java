@@ -1,6 +1,7 @@
 package com.mytest.materialdesignwidgetsample.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.mytest.materialdesignwidgetsample.R;
@@ -13,6 +14,7 @@ import butterknife.InjectView;
 
 public class PageFragment extends BaseFragment {
     public static final String ARGS_PAGE = "args_page";
+    public static final String TAG = PageFragment.class.getSimpleName();
     @InjectView(R.id.textView)
     TextView textView;
     private int mPage;
@@ -24,6 +26,18 @@ public class PageFragment extends BaseFragment {
         PageFragment fragment = new PageFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume: ");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.i(TAG, "onStop: ");
     }
 
     @Override

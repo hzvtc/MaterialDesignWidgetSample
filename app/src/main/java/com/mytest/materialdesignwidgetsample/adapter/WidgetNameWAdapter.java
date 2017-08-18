@@ -13,6 +13,8 @@ import butterknife.OnClick;
 
 /**
  * Created by FJQ on 2017/8/17.
+ * 1.注意对于竖直线性布局 item的父布局高度必须是wrap_content 否则导致竖向item占满全屏
+ * 对于水平线性布局 tem的父布局宽度必须是wrap_content 否则导致横向item占满全屏
  */
 
 public class WidgetNameWAdapter extends BaseButterKnifeReclerViewAdapter<String, WidgetNameWAdapter.ViewHolder> {

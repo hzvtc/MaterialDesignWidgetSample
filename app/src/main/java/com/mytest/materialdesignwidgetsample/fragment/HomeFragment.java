@@ -46,10 +46,10 @@ public class HomeFragment extends BaseFragment {
             }
         });
         LinearLayoutManager topLayoutManager = new LinearLayoutManager(mContext);
-        topLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        topLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         widgetName.setLayoutManager(topLayoutManager);
         widgetName.addItemDecoration(new DividerItemDecoration(mContext,
-                DividerItemDecoration.VERTICAL_LIST));
+                DividerItemDecoration.HORIZONTAL_LIST));
         widgetName.setHasFixedSize(true);
         widgetName.setAdapter(mWidgetNameWAdapter);
 
